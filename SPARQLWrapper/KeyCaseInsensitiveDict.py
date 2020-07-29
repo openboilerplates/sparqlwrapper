@@ -28,7 +28,7 @@ class KeyCaseInsensitiveDict(dict):
         """
         :param dict d: The source dictionary.
         """
-        for k, v in d.items():
+        for k, v in list(d.items()):
             self[k] = v
 
     def __setitem__(self, key, value):
