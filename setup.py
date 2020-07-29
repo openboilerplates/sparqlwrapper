@@ -29,19 +29,18 @@ with open('requirements.txt', 'r') as f:
     _install_requires = [line.rstrip('\n') for line in f]
 
 setup(
-    name='SPARQLWrapper',
-    version=version,
-    description='SPARQL Endpoint interface to Python',
-    long_description='This is a wrapper around a SPARQL service. It helps in creating the query URI and, possibly, convert the result into a more manageable format.',
-    license='W3C SOFTWARE NOTICE AND LICENSE',
-    author=authors,
-    url=url,
-    download_url='https://github.com/RDFLib/sparqlwrapper/releases',
-    platforms=['any'],
-    python_requires='>=3.5',
-    packages=['SPARQLWrapper'],
-    install_requires=_install_requires,
-    extras_require={
+      name = 'SPARQLWrapper.sslfalse',
+      version = version,
+      description = 'SPARQL Endpoint interface to Python',
+      long_description = 'This is a wrapper around a SPARQL service. It helps in creating the query URI and, possibly, convert the result into a more manageable format.',
+      license = 'W3C SOFTWARE NOTICE AND LICENSE',
+      author = authors,
+      url = url,
+      download_url = 'https://github.com/openboilerplates/sparqlwrapper/releases',
+      platforms = ['any'],
+      packages = ['SPARQLWrapper'],
+      install_requires = _install_requires,
+      extras_require = {
         'keepalive': ['keepalive>=0.5'],
     },
     classifiers=[
@@ -60,8 +59,8 @@ setup(
     keywords=['python', 'sparql', 'rdf', 'rdflib'],
     project_urls={
         'Home': 'https://rdflib.github.io/sparqlwrapper/',
-        'Documentation': 'https://sparqlwrapper.readthedocs.io',
-        'Source': 'https://github.com/RDFLib/sparqlwrapper',
-        'Tracker': 'https://github.com/RDFLib/sparqlwrapper/issues',
-    }
+        'Documentation': 'https://rdflib.github.io/sparqlwrapper/doc/',
+        'Source': 'https://github.com/openboilerplates/sparqlwrapper',
+        'Tracker': 'https://github.com/openboilerplates/sparqlwrapper/issues',
+	  }
 )
