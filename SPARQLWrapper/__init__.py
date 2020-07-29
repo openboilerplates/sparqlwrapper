@@ -9,7 +9,7 @@ format.
 
 """
 
-__version__ = "1.8.9"
+__version__ = "1.8.9.alpha"
 """The version of SPARQLWrapper"""
 
 __authors__ = "Ivan Herman, Sergio Fernández, Carlos Tejo Alonso, Alexey Zakhlestin"
@@ -30,11 +30,11 @@ __date__ = "2019-04-18"
 __agent__ = "sparqlwrapper %s (rdflib.github.io/sparqlwrapper)" % __version__
 
 
-from .Wrapper import SPARQLWrapper
-from .Wrapper import XML, JSON, TURTLE, N3, JSONLD, RDF, RDFXML, CSV, TSV
-from .Wrapper import GET, POST
-from .Wrapper import SELECT, CONSTRUCT, ASK, DESCRIBE, INSERT, DELETE
-from .Wrapper import URLENCODED, POSTDIRECTLY
-from .Wrapper import BASIC, DIGEST
+from Wrapper import SPARQLWrapper
+from Wrapper import XML, JSON, TURTLE, N3, JSONLD, RDF, RDFXML, CSV, TSV
+from Wrapper import GET, POST
+from Wrapper import SELECT, CONSTRUCT, ASK, DESCRIBE, INSERT, DELETE
+from Wrapper import URLENCODED, POSTDIRECTLY
+from Wrapper import BASIC, DIGEST
 
 from .SmartWrapper import SPARQLWrapper2
