@@ -9,7 +9,7 @@ format.
 
 """
 
-__version__ = "1.9.0.dev0+sslfalse"
+__version__ = "1.9.0.dev0-sslfalse"
 """The version of SPARQLWrapper"""
 
 __authors__ = "Ivan Herman, Sergio Fernández, Carlos Tejo Alonso, Alexey Zakhlestin"
