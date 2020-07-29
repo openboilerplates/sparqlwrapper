@@ -29,7 +29,7 @@ with open('requirements.txt', 'r') as f:
     _install_requires = [line.rstrip('\n') for line in f]
 
 setup(
-      name = 'SPARQLWrapper.sslfalse',
+      name = 'SPARQLWrapper.skipssl',
       version = version,
       description = 'SPARQL Endpoint interface to Python',
       long_description = 'This is a wrapper around a SPARQL service. It helps in creating the query URI and, possibly, convert the result into a more manageable format.',
